@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Mar 27 08:49:00 2017
+# Process ID: 16976
+# Log file: C:/Users/YANGQING/Desktop/computer/MIPS_CPU/vivado.log
+# Journal file: C:/Users/YANGQING/Desktop/computer/MIPS_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/YANGQING/Desktop/computer/MIPS_CPU/MIPS_CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xvivado/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 791.641 ; gain = 177.137
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 27 08:49:44 2017...

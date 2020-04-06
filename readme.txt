@@ -1,0 +1,2 @@
+MIP_CPU文件夹为VIVADO工程文件，bench.hex和interrupt.hex为其中ROM需要读取的指令。
+流水中断_MIPS_CPU.circ为最终的LOGISIM文件，其余两个.circ为其调用的alu和regfile模块。

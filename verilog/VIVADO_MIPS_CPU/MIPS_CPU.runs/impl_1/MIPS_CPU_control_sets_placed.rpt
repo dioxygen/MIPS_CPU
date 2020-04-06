@@ -1,0 +1,103 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Mon Feb 27 15:09:43 2017
+| Host         : yq running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MIPS_CPU_control_sets_placed.rpt
+| Design       : MIPS_CPU
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    50 |
+| Minimum Number of register sites lost to control set restrictions |    39 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             295 |          150 |
+| No           | No                    | Yes                    |               3 |            3 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            1120 |          597 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             263 |           97 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------+------------------------------+------------------------+------------------+----------------+
+|     Clock Signal    |         Enable Signal        |    Set/Reset Signal    | Slice Load Count | Bel Load Count |
++---------------------+------------------------------+------------------------+------------------+----------------+
+|  ExpSrc1_IBUF_BUFG  |                              | Id/cp0/reg1_i_1__0_n_1 |                1 |              1 |
+|  ExpSrc2_IBUF_BUFG  |                              | Id/cp0/reg21           |                1 |              1 |
+|  ExpSrc3_IBUF_BUFG  |                              | Id/cp0/reg31           |                1 |              1 |
+|  clk_divider/out[0] |                              |                        |                2 |              3 |
+| ~clk_BUFG           |                              |                        |                5 |              6 |
+|  clk_sys_IBUF_BUFG  |                              |                        |                6 |             23 |
+|  clk1               | If_id/E[0]                   | If_id/SS[0]            |               14 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[5][0][0]  |                        |               18 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[6][0][0]  |                        |               13 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[7][0][0]  |                        |               14 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[8][0][0]  |                        |               19 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[9][0][0]  |                        |               17 |             32 |
+|  n_0_1684_BUFG      |                              |                        |               32 |             32 |
+| ~clk_BUFG           | Id_ex/cause_reg[31][0]       |                        |                8 |             32 |
+| ~clk_BUFG           | Id_ex/status_reg[31][0]      |                        |               12 |             32 |
+| ~clk_BUFG           | Id_ex/EPC_reg[31][0]         |                        |                9 |             32 |
+| ~clk_BUFG           | Mem_wb/E[0]                  |                        |               18 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[10][0][0] |                        |               22 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[11][0][0] |                        |               18 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[12][0][0] |                        |               16 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[13][0][0] |                        |               16 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[14][0][0] |                        |               17 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[15][0][0] |                        |               16 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[16][0][0] |                        |               21 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[17][0][0] |                        |               21 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[18][0][0] |                        |               21 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[19][0][0] |                        |               21 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[1][0][0]  |                        |               17 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[20][0][0] |                        |               18 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[21][0][0] |                        |               20 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[22][0][0] |                        |               22 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[23][0][0] |                        |               21 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[24][0][0] |                        |               20 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[25][0][0] |                        |               16 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[26][0][0] |                        |               17 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[27][0][0] |                        |               17 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[28][0][0] |                        |               20 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[29][0][0] |                        |               18 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[2][0][0]  |                        |               13 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[30][0][0] |                        |               14 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[31][0][0] |                        |               16 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[3][0][0]  |                        |               19 |             32 |
+| ~clk_BUFG           | Mem_wb/regfile_reg[4][0][0]  |                        |               12 |             32 |
+|  clk_BUFG           | If_id/E[0]                   | clk_divider/SR[0]      |               22 |             62 |
+|  clk_BUFG           | Ex_mem/MemoutWB_reg[0]_2     |                        |               32 |            128 |
+|  clk_BUFG           | Ex_mem/MemoutWB_reg[0]_1     |                        |               32 |            128 |
+|  clk_BUFG           | Ex_mem/MemoutWB_reg[0]_0     |                        |               32 |            128 |
+|  clk_BUFG           | Ex_mem/MemoutWB_reg[0]       |                        |               32 |            128 |
+|  clk_BUFG           | If_id/E[0]                   | Hazardunit/clr2        |               61 |            169 |
+|  clk_BUFG           |                              |                        |              105 |            231 |
++---------------------+------------------------------+------------------------+------------------+----------------+
+
+
